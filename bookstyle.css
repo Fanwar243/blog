@@ -72,6 +72,10 @@ main {
     margin: auto;
 }
 
+#caption {
+    text-align: center;
+}
+
 /*text sizes*/
 
 h1 {
