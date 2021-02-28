@@ -47,15 +47,37 @@ article {
     padding: 15px;
 }
 
+/*text sizes*/
+
+h1 {
+    font-size: 1.4vmax;
+}
+
+h2 {
+    font-size: 1.2vmax;
+}
+
+p {
+    font-size: 1.1vmax;
+}
+
+li {
+    font-size: 1.1vmax;
+}
+
+a {
+    font-size: 1vmax;
+}
+
 .signature {
-    font-size: 14px;
+    font-size: 1vmax;
 }
 
 .tab {
-    text-indent: 10px;
+    text-indent: 2%;
 }
 
 footer {
     text-align: center;
-    font-size: smaller;
+    font-size: 1vmax;
 }
