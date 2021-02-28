@@ -42,11 +42,11 @@ header h2 {
 }
 
 .sidebar {
-    width: 25%;
-    margin-top: 20px;
     background-color: #D6AD60;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 25%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 2%;
     border-radius: 20px;
 }
 
@@ -57,11 +57,11 @@ header h2 {
 }
 
 article {
-    margin-top: 20px;
     background-color: #D6AD60;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 2%;
+    margin-left: 2%;
     border-radius: 20px;
 }
 
@@ -75,15 +75,33 @@ article {
     margin: auto;
 }
 
+/*text sizes*/
+
+h1 {
+    font-size: 1.4vmax;
+}
+
+h2 {
+    font-size: 1.2vmax;
+}
+
+p {
+    font-size: 1.1vmax;
+}
+
+li {
+    font-size: 1.1vmax;
+}
+
 .signature {
-    font-size: 14px;
+    font-size: 1vmax;
 }
 
 .tab {
-    text-indent: 5px;
+    text-indent: 2%;
 }
 
 footer {
     text-align: center;
-    font-size: smaller;
+    font-size: 1vmax;
 }
