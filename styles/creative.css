@@ -1,0 +1,139 @@
+body {
+    font-family: 'Piazzolla', serif;
+    font-style: normal;
+    background-image: url(https://image.freepik.com/free-photo/white-paper-canvas-texture-background-design-backdrop-overlay-design_1962-68.jpg);
+}
+
+header h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 3.5vmax;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 2vmax;
+}
+
+nav {
+    height: 100%;
+    width: 0%;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #917553;
+    overflow-x: hidden;
+    padding-top: 1%;
+    margin-right: 5%;
+    transition: .5s;
+}
+
+#links {
+    padding-top: 20%;
+}
+
+nav a {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 1.3vmax;
+    color: white;
+    text-decoration: none;
+    padding: 5% 4%;
+}
+
+nav a:hover {
+    background-color: #d3d3d3;
+    color: #917553;
+}
+
+nav a:active {
+    background-color: white;
+    color: #917553;
+}
+
+#closebtn {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: 2vmax;
+    cursor: pointer;
+    background-color: #917553;
+    color: white;
+    padding: 1%;
+    border: none;
+    transform: rotate(0deg);
+    transition: .3s;
+  }
+  
+#closebtn:hover {
+    transform: rotate(90deg);
+    transition: .3s;
+}
+
+#openbtn {
+    position: fixed;
+    top: 0;
+    font-size: 2vmax;
+    cursor: pointer;
+    color: #917553;
+    padding: 1%;
+    border: none;
+    background: none;
+    transform: rotate(0deg);
+    transition: .3s;
+}
+  
+#openbtn:hover {
+    transform: rotate(90deg);
+    transition: .3s;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    transition: margin-left .5s ease-in-out;
+    margin-bottom: 5%;
+}
+
+article {
+    padding: 1% 10%;
+    margin: 2% 5%;
+}
+
+/*text sizes*/
+
+h1 {
+    font-size: 2vmax;
+}
+
+h2 {
+    font-size: 1.7vmax;
+}
+
+p {
+    font-size: 1.3vmax;
+}
+
+li {
+    font-size: 1.1vmax;
+}
+
+a {
+    font-size: 1vmax;
+}
+
+.signature {
+    font-size: 1vmax;
+}
+
+.tab {
+    text-indent: 2%;
+}
+
+footer {
+    text-align: center;
+    font-size: 1vmax;
+}
