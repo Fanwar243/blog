@@ -4,15 +4,8 @@ body {
     background-image: url(https://image.freepik.com/free-photo/white-paper-canvas-texture-background-design-backdrop-overlay-design_1962-68.jpg);
 }
 
-header h1 {
-    padding-top: 20px;
+header {
     text-align: center;
-    font-size: 3.5vmax;
-}
-
-header h2 {
-    text-align: center;
-    font-size: 2vmax;
 }
 
 nav {
@@ -106,7 +99,7 @@ article {
 /*text sizes*/
 
 h1 {
-    font-size: 2vmax;
+    font-size: 3.5vmax;
 }
 
 h2 {
