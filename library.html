@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
     <head>
-        <title>My Library</title>
+        <title>Farid's Blog</title>
         <meta name="viewport" content="width:device-width, initial-scale:1.0">
-        <link rel='stylesheet' href='bookstyle.css'>
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel='stylesheet' href='styles/library.css'>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@400;500;900&display=swap" rel="stylesheet">
     </head>
@@ -14,11 +14,16 @@
             <h2><i>"A mind needs books like a sword needs a whetstone."</i></h2>
             <h2> — Tyrion Lannister, <i>A Game of Thrones</i></h2>
         </header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="library.html">Book Reviews</a>
-            <a href="creative.html">Creative Writing</a>
-            <a href="journal.html">Journal</a>
+        <button id="openbtn" onclick="openNav()">&#9776;</button>
+        <nav id="nav">
+            <button id="closebtn" onclick="closeNav()">&times;</button>
+            <div id="links">
+                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+                <a href="library.html">Book Reviews</a>
+                <a href="creative.html">Creative Writing</a>
+                <a href="journal.html">Journal</a>
+            </div>
         </nav>
         <div class='flex-container'>
             <div class='sidebar'>
@@ -32,7 +37,8 @@
                     <li><i>21 Lessons for the 21st Century</i> by Yuval Noah Harari</li>
                 </ul>
                 <h2>Recently Finished</h2>
-                <ol>
+
+                <ol id="bookList">
                     <li><i>Gödel, Escher, Bach</i> by Douglas Hofstadter</li>
                     <li><i>Think</i> by Simon Blackburn</li>
                     <li><i>Gödel's Proof</i> by Nagel and Newman</li>
@@ -44,8 +50,20 @@
                     <li><i>The Malay Dilemma</i> by Mahathir Mohamad</li>
                     <li><i>May 13</i> by Kua Kia Soong</li>
                 </ol>
+                
+                <div class="container">
+                    <form id="bookForm">
+                        <label for="bookTitle">Title: </label>
+                        <input name="bookTitle" type="text">
+                        <br>
+                        <label for="bookAuthor">Author: </label>
+                        <input name="bookAuthor" type="text">
+                        <br>
+                        <button onclick="update()">Submit</button>
+                    </form>
+                </div>
             </div>
-            <main>
+            <main id="main">
                 <div class='card'>
                     <h2>A Monumental Achievement in Mathematics</h2>
                     <h4>Review of Fermat's Last Theorem</h4>
@@ -86,6 +104,19 @@
         </div>
         <footer>
             <p>A web development project created by Farid Anwar Haron on December 2020.</p>
-        </footer>    
+        </footer>
+        <script>
+            function openNav() {
+                document.getElementById("nav").style.width = "12%";
+                document.getElementById("main").style.marginLeft = "5%";
+                document.getElementById("openbtn").style.display = "None";
+            }
+
+            function closeNav() {
+                document.getElementById("nav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+                document.getElementById("openbtn").style.display = "Block";
+            }
+        </script>    
     </body>
 </html>
