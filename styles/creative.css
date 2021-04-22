@@ -19,7 +19,7 @@ nav {
     overflow-x: hidden;
     padding-top: 1%;
     margin-right: 5%;
-    transition: .5s;
+    transition: .3s;
 }
 
 #links {
@@ -39,6 +39,7 @@ nav a {
 nav a:hover {
     background-color: #d3d3d3;
     color: #917553;
+    transition: .2s;
 }
 
 nav a:active {
