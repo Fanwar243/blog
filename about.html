@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Farid's Blog</title>
+        <meta name="viewport" content="width:device-width, initial-scale:1.0">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles/about.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@400;500;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <button id="openbtn" onclick="openNav()">&#9776;</button>
+        <nav id="nav">
+            <button id="closebtn" onclick="closeNav()">&times;</button>
+            <div id="links">
+                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+                <a href="library.html">Book Reviews</a>
+                <a href="creative.html">Creative Writing</a>
+                <a href="journal.html">Journal</a>
+            </div>
+        </nav>
+        <main id="main">
+            <h1>About Me</h1>
+            <img id="me" src="images/me.jpeg" style="width:30%;">
+            <p>Welcome to my blog! I'm an undergraduate at Imperial College London studying materials science. Here I write about the things I'm passionate about: philosophy, science, politics, and literature.</p>
+            <p>Instagram: @fanwarr</p>
+        </main>
+        <footer>
+            <p>A web development project created by Farid Anwar Haron on December 2020.</p>
+        </footer>
+        <script>
+            function openNav() {
+                document.getElementById("nav").style.width = "12%";
+                document.getElementById("main").style.marginLeft = "5%";
+                document.getElementById("openbtn").style.display = "None";
+            }
+
+            function closeNav() {
+                document.getElementById("nav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+                document.getElementById("openbtn").style.display = "Block";
+            }
+        </script>
+    </body>
+</html>
