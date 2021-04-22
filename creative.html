@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Writings</title>
+        <title>Farid's Blog</title>
         <meta name="viewport" content="width:device-width, initial-scale:1.0">
-        <link rel='stylesheet' href='creativestyle.css'>
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel='stylesheet' href='styles/creative.css'>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@400;500;900&display=swap" rel="stylesheet">
     </head>
@@ -14,13 +14,18 @@
             <h2><i>“There is no greater agony than bearing an untold story inside you.”</i></h2>
             <h2> — Maya Angelou</h2>
         </header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="library.html">Book Reviews</a>
-            <a href="creative.html">Creative Writing</a>
-            <a href="journal.html">Journal</a>
+        <button id="openbtn" onclick="openNav()">&#9776;</button>
+        <nav id="nav">
+            <button id="closebtn" onclick="closeNav()">&times;</button>
+            <div id="links">
+                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+                <a href="library.html">Book Reviews</a>
+                <a href="creative.html">Creative Writing</a>
+                <a href="journal.html">Journal</a>
+            </div>
         </nav>
-        <main>
+        <main id="main">
             <article>
                 <h2>Frontierlands: Act One</h2>
                 <p>
@@ -56,6 +61,19 @@
         </main>
         <footer>
             <p>A web development project created by Farid Anwar Haron on December 2020.</p>
-        </footer>    
+        </footer>
+        <script>
+            function openNav() {
+                document.getElementById("nav").style.width = "12%";
+                document.getElementById("main").style.marginLeft = "5%";
+                document.getElementById("openbtn").style.display = "None";
+            }
+
+            function closeNav() {
+                document.getElementById("nav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+                document.getElementById("openbtn").style.display = "Block";
+            }
+        </script>   
     </body>
 </html>
