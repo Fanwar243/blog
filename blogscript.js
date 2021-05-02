@@ -1,5 +1,5 @@
 function openNav() {
-    var x = window.matchMedia("(max-width: 900px)")
+    var x = window.matchMedia("screen and (max-width: 900px)")
     if (x.matches) {
         document.getElementById("nav").style.width = "40%";
         document.getElementById("nav").style.height = "60%";
@@ -24,7 +24,6 @@ function expand() {
 
 function collapse() {
     var dots = document.getElementById("dots");
-    var close = document.getElementById("dots2");
     var moreText = document.getElementById("more");
     
     moreText.style.display = "none";
