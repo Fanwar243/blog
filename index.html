@@ -14,7 +14,10 @@
             <h2><i>"The unexamined life is not worth living."</i></h2>
             <h2> — Socrates</h2>
         </header>
+
         <button id="openbtn" onclick="openNav()">&#9776;</button>
+
+        <!-- Sidebar -->
         <nav id="nav">
             <button id="closebtn" onclick="closeNav()">&times;</button>
             <div id="links">
@@ -25,6 +28,8 @@
                 <a href="journal.html">Journal</a>
             </div>
         </nav>
+
+        <!-- Main content -->
         <main id="main" class="flex-container">
             <article>
                 <h2>Rebirth</h2>
@@ -63,19 +68,20 @@
                 <p class="signature">25 February 2021</p>
             </article>
         </main>
+
         <footer>
             <p>A web development project created by Farid Anwar Haron on December 2020.</p>
-        </footer>  
+        </footer>
+
+
         <script>
             function openNav() {
                 document.getElementById("nav").style.width = "12%";
-                document.getElementById("main").style.marginLeft = "5%";
                 document.getElementById("openbtn").style.display = "None";
             }
 
             function closeNav() {
                 document.getElementById("nav").style.width = "0";
-                document.getElementById("main").style.marginLeft = "0";
                 document.getElementById("openbtn").style.display = "Block";
             }
         </script>  
