@@ -60,7 +60,7 @@ nav a:active {
     position: absolute;
     top: 0;
     right: 5%;
-    font-size: 2em;
+    font-size: 3em;
     cursor: pointer;
     background-color: #917553;
     color: white;
@@ -78,7 +78,7 @@ nav a:active {
 #openbtn {
     position: fixed;
     top: 0;
-    font-size: 2em;
+    font-size: 3em;
     cursor: pointer;
     color: #917553;
     padding: 1%;
@@ -114,27 +114,27 @@ main {
 /*text sizes*/
 
 h1 {
-    font-size: 3em;
+    font-size: 4em;
 }
 
 h2 {
-    font-size: 1.7em;
+    font-size: 3em;
 }
 
 p {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 li {
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
 
 a {
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .signature {
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .tab {
@@ -143,5 +143,5 @@ a {
 
 footer {
     text-align: center;
-    font-size: 1em;
+    font-size: 1.4em;
 }
