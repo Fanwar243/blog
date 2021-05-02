@@ -1,5 +1,5 @@
 body {
-    font-family: 'Piazzolla', serif;
+    font-family: 'Piazzolla', Arial, Helvetica, serif;
     font-style: normal;
     background-image: url(https://image.freepik.com/free-photo/white-paper-canvas-texture-background-design-backdrop-overlay-design_1962-68.jpg);
 }
@@ -15,7 +15,7 @@ nav {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #917553;
+    background-color: #D6AD60;
     overflow-x: hidden;
     padding-top: 1%;
     margin-right: 5%;
@@ -39,13 +39,13 @@ nav a {
 
 nav a:hover {
     background-color: #d3d3d3;
-    color: #917553;
+    color: #D6AD60;
     transition: .2s;
 }
 
 nav a:active {
     background-color: white;
-    color: #917553;
+    color: #D6AD60;
 }
 
 #closebtn {
@@ -55,7 +55,7 @@ nav a:active {
     right: 5%;
     font-size: 3em;
     cursor: pointer;
-    background-color: #917553;
+    background-color: #D6AD60;
     color: white;
     padding: 1%;
     border: none;
@@ -73,7 +73,7 @@ nav a:active {
     top: 0;
     font-size: 3em;
     cursor: pointer;
-    color: #917553;
+    color: #D6AD60;
     padding: 1%;
     border: none;
     background: none;
@@ -104,7 +104,7 @@ article {
     cursor: pointer;
     border:none;
     background: none;
-    color:#917553;
+    color:#D6AD60;
     font-size: 1.3em;
 }
 

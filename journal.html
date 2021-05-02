@@ -56,41 +56,9 @@
         </main>
         
         <footer>
-            <p>A web development project created by Farid Anwar Haron on December 2020.</p>
+            A web development project created by Farid Anwar Haron on December 2020.
         </footer>
 
-        <script>
-            function openNav() {
-                var x = window.matchMedia("(max-width: 900px)")
-                if (x.matches) {
-                    document.getElementById("nav").style.width = "25%";
-                } else {
-                    document.getElementById("nav").style.width = "12%";
-                }
-                document.getElementById("openbtn").style.display = "None";
-            }
-            
-            function closeNav() {
-                document.getElementById("nav").style.width = "0";
-                document.getElementById("openbtn").style.display = "Block";
-            }
-
-            function expand() {
-                var dots = document.getElementById("dots");
-                var moreText = document.getElementById("more");
-
-                dots.style.display = "none";
-                moreText.style.display = "inline";
-            }
-
-            function collapse() {
-                var dots = document.getElementById("dots");
-                var close = document.getElementById("dots2");
-                var moreText = document.getElementById("more");
-                
-                moreText.style.display = "none";
-                dots.style.display = "inline";
-            }
-        </script>  
+        <script src='blogscript.js'></script>
     </body>
 </html>
