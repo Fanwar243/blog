@@ -11,15 +11,16 @@ header {
 nav {
     height: 100%;
     width: 0%;
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    position: fixed;
+    z-index: 1;
+    top: 0;
     left: 0;
     background-color: #917553;
     overflow-x: hidden;
     padding-top: 1%;
     margin-right: 5%;
-    transition: .3s;
+    transition: .3s ease-in-out;
+    box-shadow: 2px 0px 8px 2px grey; /* h-offset v-offset blur spread color */
 }
 
 #links {
