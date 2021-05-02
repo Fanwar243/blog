@@ -10,6 +10,8 @@
     </head>
     <body>
         <button id="openbtn" onclick="openNav()">&#9776;</button>
+
+        <!-- Sidebar -->
         <nav id="nav">
             <button id="closebtn" onclick="closeNav()">&times;</button>
             <div id="links">
@@ -20,9 +22,10 @@
                 <a href="journal.html">Journal</a>
             </div>
         </nav>
+
         <main id="main">
             <h1>About Me</h1>
-            <img id="me" src="images/me.jpeg" style="width:30%;">
+            <img id="me" src="images/me.jpeg">
             <p>Welcome to my blog! I'm an undergraduate at Imperial College London studying materials science. Here I write about the things I'm passionate about: philosophy, science, politics, and literature.</p>
             <p>Instagram: @fanwarr</p>
         </main>
@@ -33,7 +36,12 @@
 
         <script>
             function openNav() {
-                document.getElementById("nav").style.width = "12%";
+                var x = window.matchMedia("(max-width: 800px)")
+                if (x.matches) {
+                    document.getElementById("nav").style.width = "25%";
+                } else {
+                    document.getElementById("nav").style.width = "12%";
+                }
                 document.getElementById("openbtn").style.display = "None";
             }
 

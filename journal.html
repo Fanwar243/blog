@@ -61,10 +61,15 @@
 
         <script>
             function openNav() {
-                document.getElementById("nav").style.width = "12%";
+                var x = window.matchMedia("(max-width: 800px)")
+                if (x.matches) {
+                    document.getElementById("nav").style.width = "25%";
+                } else {
+                    document.getElementById("nav").style.width = "12%";
+                }
                 document.getElementById("openbtn").style.display = "None";
             }
-
+            
             function closeNav() {
                 document.getElementById("nav").style.width = "0";
                 document.getElementById("openbtn").style.display = "Block";
