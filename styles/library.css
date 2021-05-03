@@ -106,6 +106,10 @@ h2 {
     font-size: 3em;
 }
 
+h4 {
+    font-size: 2em;
+}
+
 p {
     font-size: 1.5em;
 }
@@ -128,5 +132,5 @@ a {
 
 footer {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
