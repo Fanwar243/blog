@@ -1,5 +1,5 @@
 function openNav() {
-    var x = window.matchMedia("screen and (max-width: 900px)")
+    const x = window.matchMedia("screen and (max-device-width: 900px)")
     if (x.matches) {
         document.getElementById("nav").style.width = "40%";
         document.getElementById("nav").style.height = "60%";
@@ -15,16 +15,16 @@ function closeNav() {
 }
 
 function expand() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
+    const dots = document.getElementById("dots");
+    const moreText = document.getElementById("more");
 
     dots.style.display = "none";
     moreText.style.display = "inline";
 }
 
 function collapse() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
+    const dots = document.getElementById("dots");
+    const moreText = document.getElementById("more");
     
     moreText.style.display = "none";
     dots.style.display = "inline";
@@ -33,8 +33,8 @@ function collapse() {
 const update = () => {
     const newBook = document.createElement("li");
     const bookInfo = `${document.getElementById("bookTitle").value} by ${document.getElementById("bookAuthor").value}`;
+
     newBook.appendChild(document.createTextNode(bookInfo));
     document.getElementById("bookList").appendChild(newBook);
-    alert(`Updated with: ${document.getElementById("bookTitle").value} by 
-        ${document.getElementById("bookAuthor").value}`);
+    alert(`Updated with: ${document.getElementById("bookTitle").value} by ${document.getElementById("bookAuthor").value}`);
 }
