@@ -4,17 +4,6 @@ body {
     background-image: url(https://image.freepik.com/free-photo/white-paper-canvas-texture-background-design-backdrop-overlay-design_1962-68.jpg);
 }
 
-header h1 {
-    padding-top: 20px;
-    text-align: center;
-    font-size: 3.5em;
-}
-
-header h2 {
-    text-align: center;
-    font-size: 2em;
-}
-
 nav {
     height: 100%;
     width: 0%;
@@ -38,7 +27,6 @@ nav a {
     position: relative;
     display: block;
     text-align: center;
-    font-size: 1.3em;
     color: white;
     text-decoration: none;
     padding: 5% 4%;
@@ -105,13 +93,19 @@ main {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-width: 6px 6px 35px 6px;
+    border-width: 10px 10px 35px 10px;
     border-style: solid;
     border-color: white;
     box-shadow: 5px 3px 5px 5px grey;
 }
 
 /*text sizes*/
+
+@media screen and (max-device-width: 900px) {
+    body {
+        font-size: 2em;
+    }
+}
 
 h1 {
     font-size: 4em;
@@ -130,11 +124,11 @@ li {
 }
 
 a {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .signature {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .tab {

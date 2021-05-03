@@ -31,7 +31,6 @@ nav a {
     position: relative;
     display: block;
     text-align: center;
-    font-size: 1.3em;
     color: white;
     text-decoration: none;
     padding: 5% 4%;
@@ -87,7 +86,6 @@ nav a:active {
 }
 
 main {
-    transition: margin-left .5s ease-in-out;
     margin-bottom: 5%;
 }
 
@@ -105,7 +103,7 @@ article {
     border:none;
     background: none;
     color:#D6AD60;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 #dots:hover, #dots2:hover {
@@ -114,28 +112,34 @@ article {
 
 /*text sizes*/
 
+@media screen and (max-device-width: 900px) {
+    body {
+        font-size: 2em;
+    }
+}
+
 h1 {
-    font-size: 3.5em;
+    font-size: 4em;
 }
 
 h2 {
-    font-size: 1.7em;
+    font-size: 3em;
 }
 
 p {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 li {
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
 
 a {
-    font-size: 1em;
+    font-size: 2em;
 }
 
 .signature {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .tab {
@@ -144,5 +148,5 @@ a {
 
 footer {
     text-align: center;
-    font-size: 1em;
+    font-size: 1.4em;
 }

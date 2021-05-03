@@ -14,7 +14,9 @@
             <h2><i>"A mind needs books like a sword needs a whetstone."</i></h2>
             <h2> — Tyrion Lannister, <i>A Game of Thrones</i></h2>
         </header>
+        
         <button id="openbtn" onclick="openNav()">&#9776;</button>
+
         <nav id="nav">
             <button id="closebtn" onclick="closeNav()">&times;</button>
             <div id="links">
@@ -25,83 +27,45 @@
                 <a href="journal.html">Journal</a>
             </div>
         </nav>
-        <div class='flex-container'>
-            <div class='sidebar'>
-                <h2>What I'm Currently Reading</h2>
-                <img src="http://d2vq2wub736qgs.cloudfront.net/users/53456/images/detailed/4/Peoples-History-cover.jpg?t=1520774750" id="book">
-                <p id="caption"><i>A People's History of Malaysia</i> by Syed Husin Ali</p>
-                <h2>Upcoming Reads</h2>
-                <ul>
-                    <li><i>The Islamic Enlightenment</i> by Christopher de Bellaigue</li>
-                    <li><i>Atomic Habits</i> by James Clear</li>
-                    <li><i>21 Lessons for the 21st Century</i> by Yuval Noah Harari</li>
-                </ul>
-                <h2>Recently Finished</h2>
 
-                <ol id="bookList">
-                    <li><i>Gödel, Escher, Bach</i> by Douglas Hofstadter</li>
-                    <li><i>Think</i> by Simon Blackburn</li>
-                    <li><i>Gödel's Proof</i> by Nagel and Newman</li>
-                    <li><i>Flatland</i> by Edwin Abbott Abbott</li>
-                    <li><i>The Two Cultures</i> by C.P. Snow</li>
-                    <li><i>Alex's Adventures in Numberland</i> by Alex Bellos</li>
-                    <li><i>Fermat's Last Theorem</i> by Simon Singh</li>
-                    <li><i>We Should All Be Feminists</i> by Chimamanda Adichie</li>
-                    <li><i>The Malay Dilemma</i> by Mahathir Mohamad</li>
-                    <li><i>May 13</i> by Kua Kia Soong</li>
-                </ol>
-                
-                <div class="container">
-                    <form id="bookForm">
-                        <label for="bookTitle">Title: </label>
-                        <input name="bookTitle" type="text">
-                        <br>
-                        <label for="bookAuthor">Author: </label>
-                        <input name="bookAuthor" type="text">
-                        <br>
-                        <button onclick="update()">Submit</button>
-                    </form>
-                </div>
-            </div>
-            <main id="main">
-                <div class='card'>
-                    <h2>A Monumental Achievement in Mathematics</h2>
-                    <h4>Review of Fermat's Last Theorem</h4>
-                    <p>Simon Singh brings us on a journey through time detailing the toils of generations of mathematicians
-                        who dared to take on the infamous Fermat's Last Theorem. In doing so, Singh introduces readers
-                        to the various otherworldly branches of mathematics that found their way into the centuries-long fight
-                        against the Last Theorem, from abstract algebra and set theory to modular forms and elliptic curves.
-                        At the heart of the story is Princeton mathematician Andrew Wiles, who set upon the impossible task
-                        of proving the theorem ever since he laid eyes on it as a child. What started as a childhood obsession
-                        turned into a life's calling for Wiles, who spent nearly a decade in isolation working on the problem.
-                        The book culminates in Wiles' presentation of his first proof, its initial failure,
-                        and the ecstatic climax of when the proof is repaired and presented to the world.
-                    </p> <p class='tab'>
-                        The winding path that Wiles and others took in solving it teaches us that the solutions to our problems
-                        sometimes hide in plain sight while viewed from different perspectives. Wiles himself would not have thought
-                        that Fermat's Last Theorem would be related to elliptic curves, just as much as the vast majority of
-                        academics did not think that elliptic curves were related to modular forms.
-                    </p> <p class='tab'>
-                        Singh's descriptions of the lives and works of the greatest mathematicians of every era are colorful
-                        and accessible. Without needing to resort to technical details and difficult equations, he manages to
-                        explain the most important works of the likes of Euler, Gauss, and Bertrand Russell and communicate
-                        the significance of their ideas.
-                    </p> <p class='tab'>
-                        I particularly enjoyed the tale of one influential French mathematician named Évariste Galois,
-                        who formulated the beginnings of two branches of abstract algebra, namely group theory and his
-                        namesake Galois theory, while still a teenager. What made him so fascinating in my eyes
-                        was that in addition to being a mathematician, he was a political revolutionary. Galois was a die-hard
-                        republican and was one of the Parisian figureheads in the movement against the French monarchy.
-                    </p>
-                    <p class='signature'>December 18th 2020</p>
-                </div>
-                <div class='card'>
-                    <h2>Ideals of a Malaysian Malaysia</h2>
-                    <h4>Exploring Tunku Abdul Rahman's Vision of Malaysia</h4>
-                    <p class='signature'>December 18th 2020</p>
-                </div>
-            </main>
-        </div>
+        <main id="main">
+            <article>
+                <h2>A Monumental Achievement in Mathematics</h2>
+                <h4>Review of Fermat's Last Theorem</h4>
+                <p>Simon Singh brings us on a journey through time detailing the toils of generations of mathematicians
+                    who dared to take on the infamous Fermat's Last Theorem. In doing so, Singh introduces readers
+                    to the various otherworldly branches of mathematics that found their way into the centuries-long fight
+                    against the Last Theorem, from abstract algebra and set theory to modular forms and elliptic curves.
+                    At the heart of the story is Princeton mathematician Andrew Wiles, who set upon the impossible task
+                    of proving the theorem ever since he laid eyes on it as a child. What started as a childhood obsession
+                    turned into a life's calling for Wiles, who spent nearly a decade in isolation working on the problem.
+                    The book culminates in Wiles' presentation of his first proof, its initial failure,
+                    and the ecstatic climax of when the proof is repaired and presented to the world.
+                </p> <p class='tab'>
+                    The winding path that Wiles and others took in solving it teaches us that the solutions to our problems
+                    sometimes hide in plain sight while viewed from different perspectives. Wiles himself would not have thought
+                    that Fermat's Last Theorem would be related to elliptic curves, just as much as the vast majority of
+                    academics did not think that elliptic curves were related to modular forms.
+                </p> <p class='tab'>
+                    Singh's descriptions of the lives and works of the greatest mathematicians of every era are colorful
+                    and accessible. Without needing to resort to technical details and difficult equations, he manages to
+                    explain the most important works of the likes of Euler, Gauss, and Bertrand Russell and communicate
+                    the significance of their ideas.
+                </p> <p class='tab'>
+                    I particularly enjoyed the tale of one influential French mathematician named Évariste Galois,
+                    who formulated the beginnings of two branches of abstract algebra, namely group theory and his
+                    namesake Galois theory, while still a teenager. What made him so fascinating in my eyes
+                    was that in addition to being a mathematician, he was a political revolutionary. Galois was a die-hard
+                    republican and was one of the Parisian figureheads in the movement against the French monarchy.
+                </p>
+                <p class='signature'>December 18th 2020</p>
+            </article>
+            <article>
+                <h2>Ideals of a Malaysian Malaysia</h2>
+                <h4>Exploring Tunku Abdul Rahman's Vision of Malaysia</h4>
+                <p class='signature'>December 18th 2020</p>
+            </article>
+        </main>
         <footer>
             A web development project created by Farid Anwar Haron on December 2020.
         </footer>

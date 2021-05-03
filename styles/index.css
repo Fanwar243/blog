@@ -38,7 +38,6 @@ nav a {
     position: relative;
     display: block;
     text-align: center;
-    font-size: 1.3em;
     color: white;
     text-decoration: none;
     padding: 5% 4%;
@@ -98,12 +97,6 @@ article {
     margin: 2% 5%;
 }
 
-@media screen and (max-width: 800px) {
-    #nav {
-        position:fixed;
-    }
-}
-
 footer {
     text-align: center;
     font-size: 1em;
@@ -111,30 +104,41 @@ footer {
 
 /*text sizes*/
 
+@media screen and (max-device-width: 900px) {
+    body {
+        font-size: 2em;
+    }
+}
+
 h1 {
-    font-size: 2em;
+    font-size: 4em;
 }
 
 h2 {
-    font-size: 1.7em;
+    font-size: 3em;
 }
 
 p {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 li {
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
 
 a {
-    font-size: 1em;
+    font-size: 2em;
 }
 
 .signature {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .tab {
     text-indent: 2%;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.4em;
 }
