@@ -105,6 +105,10 @@ main {
     body {
         font-size: 2em;
     }
+    #me {
+        max-width: 80%;
+        height: auto;
+    }
 }
 
 h1 {
@@ -137,5 +141,5 @@ a {
 
 footer {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
