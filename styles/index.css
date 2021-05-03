@@ -102,7 +102,7 @@ footer {
 
 /*text sizes*/
 
-@media screen and (max-device-width: 900px) {
+@media screen and (max-device-width: 900px) and (orientation:portrait) {
     body {
         font-size: 2em;
     }
