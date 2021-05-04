@@ -103,7 +103,7 @@ main {
 
 @media screen and (max-device-width: 900px) and (orientation:portrait) {
     body {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     #me {
         max-width: 80%;
