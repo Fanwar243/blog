@@ -103,23 +103,23 @@ h1 {
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 h4 {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 li {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 a {
-    font-size: 2em;
+    font-size: 1.2em;
 }
 
 .signature {
@@ -132,5 +132,5 @@ a {
 
 footer {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
 }
