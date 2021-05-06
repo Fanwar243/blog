@@ -109,11 +109,16 @@ article {
         width: 80%;
         position: static;
         margin: auto;
+        background-color: transparent;
+        box-shadow: none; /* h-offset v-offset blur spread color */
+        overflow-x: visible;
     }
     #links {
         display: flex;
         flex-direction: row;
-        padding: 0px 10px 15px 10px;
+        padding: 0px;
+        background-color: #D6AD60;
+        box-shadow: 2px 2px 8px 2px grey; /* h-offset v-offset blur spread color */
     }
     nav a {
         width: 100%;
