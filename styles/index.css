@@ -4,13 +4,14 @@ body {
     background-image: url(https://image.freepik.com/free-photo/white-paper-canvas-texture-background-design-backdrop-overlay-design_1962-68.jpg);
 }
 
-header h1 {
+h1 {
     padding-top: 20px;
     text-align: center;
+    font-size: 4em;
 }
 
-header h2 {
-    text-align: center;
+h2 {
+    font-size: 2em;
 }
 
 nav {
@@ -38,13 +39,12 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    transition: .4s;
     padding: 5% 4%;
 }
 
 nav a:hover {
-    background-color: #d3d3d3;
-    color: #D6AD60;
-    transition: .2s;
+    background-color: #e2c58f;
 }
 
 nav a:active {
@@ -100,6 +100,18 @@ footer {
     font-size: 1em;
 }
 
+#me {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    border-width: 10px 10px 35px 10px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 5px 3px 5px 5px grey;
+}
+
 @media screen and (max-device-width: 900px) and (orientation:portrait) {
     body {
         font-size: 1.5em;
@@ -138,20 +150,16 @@ footer {
     }
 }
 
-h1 {
-    font-size: 4em;
-}
-
-h2 {
-    font-size: 2em;
-}
-
 h4 {
     font-size: 1.8em;
 }
 
 p {
     font-size: 1.2em;
+}
+
+.center {
+    text-align: center;
 }
 
 li {
@@ -171,8 +179,9 @@ a {
 }
 
 footer {
-    border-top: 1px solid black;
-    padding-top: 5px;
+    color: black;
+    background-color: #D6AD60;
+    padding: 5px;
     text-align: center;
     font-size: 1em;
 }
