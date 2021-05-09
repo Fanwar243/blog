@@ -112,6 +112,22 @@ footer {
     box-shadow: 5px 3px 5px 5px grey;
 }
 
+#more {
+    display:none;
+}
+
+#dots, #dots2 {
+    cursor: pointer;
+    border:none;
+    background: none;
+    color:#D6AD60;
+    font-size: 1em;
+}
+
+#dots:hover, #dots2:hover {
+    text-decoration: underline;
+}
+
 @media screen and (max-device-width: 900px) and (orientation:portrait) {
     body {
         font-size: 1.5em;
