@@ -1,3 +1,8 @@
+html, body {
+    min-height: 100%;
+    margin: 0;
+}
+
 body {
     font-family: 'Piazzolla', Arial, Helvetica, serif;
     font-style: normal;
@@ -196,10 +201,14 @@ a {
     text-indent: 2%;
 }
 
+/* FOOTER */
+
 footer {
-    color: black;
+    color: whitesmoke;
     background-color: #D6AD60;
-    padding: 5px;
+    padding: 1%;
     text-align: center;
     font-size: 1em;
+    bottom: 0%;
+    width: 100%;
 }
