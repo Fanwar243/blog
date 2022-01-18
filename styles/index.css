@@ -11,15 +11,8 @@ body {
     background-size: 40%;
 }
 
-h1 {
-    padding-top: 20px;
-    text-align: center;
-    font-size: 4em;
-}
 
-h2 {
-    font-size: 2em;
-}
+/* NAVBAR */
 
 nav {
     height: 100%;
@@ -102,11 +95,6 @@ article {
     margin: 2% 5%;
 }
 
-footer {
-    text-align: center;
-    font-size: 1em;
-}
-
 #me {
     max-width: 30%;
     height: auto;
@@ -118,6 +106,8 @@ footer {
     border-color: white;
     box-shadow: 5px 3px 5px 5px grey;
 }
+
+/* EXPAND/COLLAPSE TEXT */
 
 #more {
     display:none;
@@ -135,9 +125,14 @@ footer {
     text-decoration: underline;
 }
 
+/* RESPONSIVE DESIGN */
+
 @media screen and (max-device-width: 900px) and (orientation:portrait) {
     body {
         font-size: 1.5em;
+    }
+    article {
+        margin: 2% 2%;
     }
 }
 
@@ -172,6 +167,19 @@ footer {
         padding: 20px;
     }
 }
+
+/* TEXT */
+
+h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
 
 h4 {
     font-size: 1.8em;
