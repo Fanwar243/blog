@@ -12,8 +12,13 @@ body {
     overflow-x: hidden;
 }
 
+article {
+    padding: 1% 10%;
+    margin: 2% 5%;
+}
 
-/* NAVBAR */
+
+/* NAVBAR (MOBILE-FIRST) */
 
 nav {
     height: 100%;
@@ -42,6 +47,7 @@ nav a {
     text-decoration: none;
     transition: .4s;
     padding: 5% 4%;
+    font-size: 2.5em;
 }
 
 nav a:hover {
@@ -66,8 +72,8 @@ nav a:active {
     border: none;
     transform: rotate(0deg);
     transition: .3s;
-  }
-  
+}
+
 #closebtn:hover {
     transform: rotate(90deg);
     transition: .3s;
@@ -85,18 +91,13 @@ nav a:active {
     transform: rotate(0deg);
     transition: .3s;
 }
-  
+
 #openbtn:hover {
     transform: rotate(90deg);
     transition: .3s;
 }
 
-article {
-    padding: 1% 10%;
-    margin: 2% 5%;
-}
-
-#me {
+#me { /*PICTURE IN ABOUT PAGE*/
     max-width: 30%;
     height: auto;
     display: block;
@@ -166,6 +167,7 @@ article {
         color: white;
         text-decoration: none;
         padding: 20px;
+        font-size: 1.3em;
     }
 }
 
