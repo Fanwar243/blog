@@ -9,20 +9,27 @@
         <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@400;500;900&display=swap" rel="stylesheet">
     </head>
     <body>
+
+        <header>
+            <h1>About Me</h1>
+            <h2 class='center'><i>“We live only to discover beauty. All else is a form of waiting.”</i></h2>
+            <h2 class='center'> — Kahlil Gibran</h2>
+        </header>
+
         <button id="openbtn" onclick="openNav()">&#9776;</button>
 
+        <nav id="nav">
+            <button id="closebtn" onclick="closeNav()">&times;</button>
+            <div id="links">
+                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+                <a href="library.html">Book Reviews</a>
+                <a href="creative.html">Creative Writing</a>
+                <a href="journal.html">Journal</a>
+            </div>
+        </nav>
+
         <main id="main">
-            <h1>About Me</h1>
-            <nav id="nav">
-                <button id="closebtn" onclick="closeNav()">&times;</button>
-                <div id="links">
-                    <a href="about.html">About</a>
-                    <a href="index.html">Home</a>
-                    <a href="library.html">Book Reviews</a>
-                    <a href="creative.html">Creative Writing</a>
-                    <a href="journal.html">Journal</a>
-                </div>
-            </nav>
             
             <img id="me" src="images/me.jpeg">
             <p class="center">Welcome to my blog! I'm an undergraduate at Imperial College London studying materials science.
@@ -31,6 +38,7 @@
             <p class="center">Get in touch below!</p>
             <p class="center">Email me at faridanwar243@gmail.com</p>
             <p class='center'>Check out my other projects at <a href="https://github.com/Fanwar243/Fanwar243">GitHub!</a></p>
+
         </main>
         
         <footer>

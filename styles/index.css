@@ -9,6 +9,7 @@ body {
     /*background-image: url(https://image.freepik.com/free-photo/white-paper-canvas-texture-background-design-backdrop-overlay-design_1962-68.jpg);*/
     background-image: url('../images/Canvas.jpg');
     background-size: 40%;
+    overflow-x: hidden;
 }
 
 
