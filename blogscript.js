@@ -1,3 +1,5 @@
+//NAVBAR RESPONSIVE DESIGN
+
 function openNav() {
     /*const x = window.matchMedia("screen and (max-device-width: 900px)")
     if (x.matches) {
@@ -7,11 +9,13 @@ function openNav() {
     document.getElementById("openbtn").style.display = "None";
 }
 
+//Collapses navbar and shows navbar expand button
 function closeNav() {
     document.getElementById("nav").style.width = "0";
     document.getElementById("openbtn").style.display = "Block";
 }
 
+//EXPAND AND COLLAPSE ARTICLE TEXT
 function expand() {
     const dots = document.getElementById("dots");
     const moreText = document.getElementById("more");
@@ -27,6 +31,8 @@ function collapse() {
     moreText.style.display = "none";
     dots.style.display = "inline";
 }
+
+//UPDATE BOOK LIST WITH NEW ITEM
 
 const update = () => {
     const newBook = document.createElement("li");
