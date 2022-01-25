@@ -1,11 +1,9 @@
 function openNav() {
-    const x = window.matchMedia("screen and (max-device-width: 900px)")
+    /*const x = window.matchMedia("screen and (max-device-width: 900px)")
     if (x.matches) {
-        document.getElementById("nav").style.width = "50%";
-        document.getElementById("nav").style.height = "60%";
-    } else {
-        document.getElementById("nav").style.width = "20%";
-    }
+        document.getElementById("nav").style.width = "100%";
+    }*/
+    document.getElementById("nav").style.width = "100%";
     document.getElementById("openbtn").style.display = "None";
 }
 
