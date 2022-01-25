@@ -14,7 +14,7 @@ body {
 
 article {
     padding: 1% 10%;
-    margin: 2% 5%;
+    margin: 0;
 }
 
 
@@ -47,7 +47,7 @@ nav a {
     text-decoration: none;
     transition: .4s;
     padding: 5% 4%;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 nav a:hover {
@@ -64,7 +64,7 @@ nav a:active {
     position: absolute;
     top: 0;
     right: 5%;
-    font-size: 3em;
+    font-size: 2em;
     cursor: pointer;
     background-color: #D6AD60;
     color: white;
@@ -82,7 +82,7 @@ nav a:active {
 #openbtn {
     position: fixed;
     top: 0;
-    font-size: 3em;
+    font-size: 2em;
     cursor: pointer;
     color: #D6AD60;
     padding: 1%;
@@ -129,16 +129,18 @@ nav a:active {
 
 /* RESPONSIVE DESIGN */
 
-@media screen and (max-device-width: 900px) and (orientation:portrait) {
-    body {
-        font-size: 1.5em;
+@media screen and (max-width: 900px) and (orientation:portrait) {
+    /*body {
+        font-size: 1em;
     }
+    
     article {
         margin: 2% 2%;
     }
+    */
 }
 
-@media screen and (min-device-width: 1000px) {
+@media screen and (min-width: 1280px) { /*DESKTOP*/
     #closebtn {
         display: none;
     }
@@ -150,7 +152,7 @@ nav a:active {
         position: static;
         margin: auto;
         background-color: transparent;
-        box-shadow: none; /* h-offset v-offset blur spread color */
+        box-shadow: none;
         overflow-x: visible;
     }
     #links {
@@ -169,6 +171,7 @@ nav a:active {
         padding: 20px;
         font-size: 1.3em;
     }
+    
 }
 
 /* TEXT */
