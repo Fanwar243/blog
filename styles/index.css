@@ -110,6 +110,19 @@ nav a:active {
     box-shadow: 5px 3px 5px 5px grey;
 }
 
+.imagewrapper {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    padding: 1% 1% 5% 1%;
+    background-color: white;
+    box-shadow: 5px 3px 5px 5px grey;
+}
+
+#readingnow {
+    width: 100%;
+}
+
 /* EXPAND/COLLAPSE TEXT */
 
 #more {
@@ -130,18 +143,9 @@ nav a:active {
 
 /* RESPONSIVE DESIGN */
 
-@media screen and (max-width: 900px) and (orientation:portrait) {
-    /*body {
-        font-size: 1em;
-    }
-    
-    article {
-        margin: 2% 2%;
-    }
-    */
-}
+/*DESKTOP*/
 
-@media screen and (min-width: 1280px) { /*DESKTOP*/
+@media screen and (min-width: 1280px) { 
     #closebtn {
         display: none;
     }
