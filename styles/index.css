@@ -98,6 +98,17 @@ nav a:active {
     transition: .3s;
 }*/
 
+#reading {
+    display: flex;
+    flex-direction: row;
+    background-color: tan;
+    width: 80%;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 5%;
+    padding: 0;
+}
+
 #me { /*PICTURE IN ABOUT PAGE*/
     max-width: 30%;
     height: auto;
@@ -113,7 +124,7 @@ nav a:active {
 .imagewrapper {
     display: flex;
     justify-content: center;
-    width: 40%;
+    width: 80%;
     padding: 1% 1% 5% 1%;
     background-color: white;
     box-shadow: 5px 3px 5px 5px grey;
