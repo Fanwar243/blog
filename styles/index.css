@@ -134,6 +134,17 @@ nav a:active {
     width: 100%;
 }
 
+#collage {
+    display: flex;
+    flex-flow: row ;
+}
+
+.mok {
+    width: 80%;
+    border: 5px solid white;
+    box-shadow: 5px 3px 5px 5px grey;
+}
+
 /* EXPAND/COLLAPSE TEXT */
 
 #more {
