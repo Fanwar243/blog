@@ -32,7 +32,6 @@ nav {
     overflow-x: hidden;
     padding-top: 1%;
     margin-right: 5%;
-    transition: .3s ease-in-out;
     box-shadow: 2px 0px 8px 2px grey; /* h-offset v-offset blur spread color */
 }
 
@@ -46,7 +45,7 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
-    transition: .4s;
+    transition: background-color .4s;
     padding: 5% 4%;
     font-size: 2em;
 }
@@ -71,14 +70,7 @@ nav a:active {
     color: white;
     padding: 1%;
     border: none;
-    /*transform: rotate(0deg);
-    transition: .3s;*/
 }
-/*
-#closebtn:hover {
-    transform: rotate(90deg);
-    transition: .3s;
-}*/
 
 #openbtn {
     position: fixed;
@@ -89,14 +81,7 @@ nav a:active {
     padding: 1%;
     border: none;
     background: none;
-    /*transform: rotate(0deg);
-    transition: .3s;*/
 }
-/*
-#openbtn:hover {
-    transform: rotate(90deg);
-    transition: .3s;
-}*/
 
 #reading {
     display: flex;
@@ -201,6 +186,15 @@ nav a:active {
     article {
         padding: 1% 10%;
         margin: 0;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        margin-top: 0;
+        padding-top: 0;
+        width: 100%;
+        font-size: 1em;
+        z-index: 100;
     }
     
 }

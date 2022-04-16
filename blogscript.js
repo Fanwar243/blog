@@ -15,6 +15,19 @@ function closeNav() {
     document.getElementById("openbtn").style.display = "Block";
 }
 
+window.onscroll = function() {stickynav()};
+
+const navbar = document.getElementById("nav");
+const sticky = navbar.offsetTop;
+
+function stickynav() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+
 //EXPAND AND COLLAPSE ARTICLE TEXT
 function expand() {
     const dots = document.getElementById("dots");
