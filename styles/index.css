@@ -13,6 +13,10 @@ body {
     color: #122620;
 }
 
+main {
+    z-index: 0;
+}
+
 article {
     padding: 1% 5%;
     margin: 0;
@@ -109,7 +113,7 @@ nav a:active {
 .imagewrapper {
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 60%;
     padding: 1% 1% 5% 1%;
     background-color: white;
     box-shadow: 5px 3px 5px 5px grey;
@@ -164,6 +168,7 @@ nav a:active {
         position: static;
         margin: auto;
         background-color: transparent;
+        opacity: 95%;
         box-shadow: none;
         overflow-x: visible;
     }
@@ -194,7 +199,7 @@ nav a:active {
         padding-top: 0;
         width: 100%;
         font-size: 1em;
-        z-index: 100;
+        z-index: 1;
     }
     
 }
