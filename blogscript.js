@@ -88,8 +88,9 @@ function darkmode() {
             element.style.opacity = "50%";
         })
 
-        document.getElementById("nav").style.backgroundColor = "#121212";
+        //document.getElementById("nav").style.backgroundColor = "#121212";
         document.getElementById("links").style.backgroundColor = "#303030";
+        document.getElementById("links").style.boxShadow = "none";
 
         document.getElementById("openbtn").style.color = "white";
         document.getElementById("openbtn").style.opacity = "70%";
@@ -118,8 +119,9 @@ function darkmode() {
             list.style.opacity = "100%";
         })
         
-        document.getElementById("nav").style.backgroundColor = "#F4EBD0";
+        //document.getElementById("nav").style.backgroundColor = "#F4EBD0";
         document.getElementById("links").style.backgroundColor = "#D6AD60";
+        document.getElementById("links").style.boxShadow = "2px 2px 8px 2px grey;";
 
         document.getElementById("openbtn").style.color = "#D6AD60";
         document.getElementById("openbtn").style.opacity = "100%";

@@ -32,11 +32,11 @@ nav {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #D6AD60;
+    background-color: transparent;
     overflow-x: hidden;
     padding-top: 1%;
     margin-right: 5%;
-    box-shadow: 2px 0px 8px 2px grey; /* h-offset v-offset blur spread color */
+    /*box-shadow: 2px 0px 8px 2px grey;  h-offset v-offset blur spread color */
 }
 
 #links {
@@ -242,7 +242,7 @@ textarea::-webkit-scrollbar-thumb {
         padding-top: 0;
         width: 100%;
         font-size: 1em;
-        /*z-index: 1;*/
+        z-index: 1;
     }
     
 }
