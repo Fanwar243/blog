@@ -2,6 +2,7 @@ html, body {
     min-height: 100%;
     width: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -9,13 +10,14 @@ body {
     font-style: normal;
     background-color: #F4EBD0;
     background-size: 40%;
-    overflow-x: hidden;
     color: #122620;
 }
 
+/*
 main {
     z-index: 0;
 }
+*/
 
 article {
     padding: 1% 5%;
@@ -63,6 +65,10 @@ nav a:active {
     color: #D6AD60;
 }
 
+#darkmode {
+    cursor: pointer;
+}
+
 #closebtn {
     display: block;
     position: absolute;
@@ -70,7 +76,7 @@ nav a:active {
     right: 5%;
     font-size: 2em;
     cursor: pointer;
-    background-color: #D6AD60;
+    background: none;
     color: white;
     padding: 1%;
     border: none;
@@ -230,6 +236,7 @@ textarea::-webkit-scrollbar-thumb {
         padding: 1% 10%;
         margin: 0;
     }
+    /*sticky navbar style*/
     .sticky {
         position: fixed;
         top: 0;
@@ -237,7 +244,7 @@ textarea::-webkit-scrollbar-thumb {
         padding-top: 0;
         width: 100%;
         font-size: 1em;
-        z-index: 1;
+        /*z-index: 1;*/
     }
     
 }
@@ -286,7 +293,7 @@ a {
 /* FOOTER */
 
 footer {
-    color: #122620;
+    color: white;
     background-color: #D6AD60;
     padding: 1%;
     text-align: center;

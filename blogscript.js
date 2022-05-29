@@ -1,5 +1,4 @@
-//NAVBAR RESPONSIVE DESIGN
-
+//NAVBAR RESPONSIVE DESIGN AND EXPAND
 function openNav() {
     /*const x = window.matchMedia("screen and (max-device-width: 900px)")
     if (x.matches) {
@@ -9,12 +8,13 @@ function openNav() {
     document.getElementById("openbtn").style.display = "None";
 }
 
-//Collapses navbar and shows navbar expand button
+//COLLAPSES NAVBAR AND SHOWS EXPAND BUTTON
 function closeNav() {
     document.getElementById("nav").style.width = "0";
     document.getElementById("openbtn").style.display = "Block";
 }
 
+//STICKY NAVBAR
 window.onscroll = function() {stickynav()};
 
 const navbar = document.getElementById("nav");
@@ -29,6 +29,7 @@ function stickynav() {
 }
 
 //EXPAND AND COLLAPSE ARTICLE TEXT
+//add condition: if length of p > x, then hide automatically
 function expand() {
     const dots = document.getElementById("dots");
     const moreText = document.getElementById("more");
@@ -44,7 +45,7 @@ function collapse() {
     dots.style.display = "inline";
 }
 
-//UPDATE BOOK LIST WITH NEW ITEM
+//UPDATE BOOK LIST WITH NEW ITEM -- NOT WORKING, FIX!
 
 const update = () => {
     const newBook = document.createElement("li");
@@ -66,22 +67,41 @@ function darkmode() {
         document.getElementById("darkmode").innerHTML = "🌣";
         document.getElementsByTagName("body")[0].style.backgroundColor = "#121212";
         document.getElementsByTagName("body")[0].style.color = "white";
+
         headings = Array.from(document.getElementsByTagName("h2"));
-        headings.forEach((element) => {
-            element.style.opacity = "70%";
+        headings.forEach((heading) => {
+            heading.style.opacity = "80%";
         });
+
+        subheadings = Array.from(document.getElementsByTagName("h4"));
+        subheadings.forEach((subheading) => {
+            subheading.style.opacity = "60%";
+        })
+
         text = Array.from(document.getElementsByTagName("p"));
         text.forEach((element) => {
             element.style.opacity = "50%";
         });
+
         lists = Array.from(document.getElementsByTagName("ul"));
         lists.forEach((element) => {
             element.style.opacity = "50%";
         })
-        document.getElementById("links").style.backgroundColor = "#303030"
-        document.getElementById("reading").style.backgroundColor = "#424242"
+
+        document.getElementById("nav").style.backgroundColor = "#121212";
+        document.getElementById("links").style.backgroundColor = "#303030";
+
+        document.getElementById("openbtn").style.color = "white";
+        document.getElementById("openbtn").style.opacity = "70%";
+
+        try {
+            document.getElementById("reading").style.backgroundColor = "#424242";
+        } catch(e) {
+            //do nothing
+        }
+
         document.getElementsByTagName("footer")[0].style.backgroundColor = "#303030";
-        document.getElementsByTagName("footer")[0].style.color = "white";
+        document.getElementsByTagName("footer")[0].style.opacity = "50%";
     } else {
         inDarkMode = false;
 
@@ -97,9 +117,20 @@ function darkmode() {
         lists.forEach((list) => {
             list.style.opacity = "100%";
         })
+        
+        document.getElementById("nav").style.backgroundColor = "#F4EBD0";
         document.getElementById("links").style.backgroundColor = "#D6AD60";
-        document.getElementById("reading").style.backgroundColor = "tan"
+
+        document.getElementById("openbtn").style.color = "#D6AD60";
+        document.getElementById("openbtn").style.opacity = "100%";
+
+        try {
+            document.getElementById("reading").style.backgroundColor = "tan";
+        } catch(e) {
+            //do nothing
+        }
+
         document.getElementsByTagName("footer")[0].style.backgroundColor = "#D6AD60";
-        document.getElementsByTagName("footer")[0].style.color = "#122620";
+        document.getElementsByTagName("footer")[0].style.opacity = "100%";
     }   
 }
