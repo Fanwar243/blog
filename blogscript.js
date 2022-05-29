@@ -121,7 +121,7 @@ function darkmode() {
         
         //document.getElementById("nav").style.backgroundColor = "#F4EBD0";
         document.getElementById("links").style.backgroundColor = "#D6AD60";
-        document.getElementById("links").style.boxShadow = "2px 2px 8px 2px grey;";
+        document.getElementById("links").style.boxShadow = "2px 2px 8px 2px grey";
 
         document.getElementById("openbtn").style.color = "#D6AD60";
         document.getElementById("openbtn").style.opacity = "100%";
