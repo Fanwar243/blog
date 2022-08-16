@@ -45,17 +45,6 @@ function collapse() {
     dots.style.display = "inline";
 }
 
-//UPDATE BOOK LIST WITH NEW ITEM -- NOT WORKING, FIX!
-
-const update = () => {
-    const newBook = document.createElement("li");
-    const bookInfo = `${document.getElementById("bookTitle").value} by ${document.getElementById("bookAuthor").value}`;
-
-    newBook.appendChild(document.createTextNode(bookInfo));
-    document.getElementById("bookList").appendChild(newBook);
-    alert(`Updated with: ${document.getElementById("bookTitle").value} by ${document.getElementById("bookAuthor").value}`);
-}
-
 //DARK MODE
 
 let inDarkMode = false;
@@ -135,4 +124,21 @@ function darkmode() {
         document.getElementsByTagName("footer")[0].style.backgroundColor = "#D6AD60";
         document.getElementsByTagName("footer")[0].style.opacity = "100%";
     }   
+}
+
+//BOOK LOG 
+
+const updateList = () => {
+    let ol = document.getElementById("readingList");
+    let bookName = document.getElementById("bookname").value;
+    let author = document.getElementById("author").value;
+
+    if (bookName !== "") {
+        if (author !== "") {
+            ol.innerHTML += `<li><i>${bookName}</i> by ${author}</li>`;
+        } else {
+            ol.innerHTML += `<li><i>${bookName}</i>`;
+        }
+    }
+    
 }

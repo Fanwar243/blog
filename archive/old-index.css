@@ -1,0 +1,111 @@
+body {
+    font-family: 'Piazzolla', Arial, Helvetica, serif;
+    font-style: normal;
+    background-image: url(https://image.freepik.com/free-photo/white-paper-canvas-texture-background-design-backdrop-overlay-design_1962-68.jpg);
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+nav {
+    width: 100%;
+    overflow: hidden;
+    background-color: #555;
+    
+}
+
+nav a {
+    float: left;
+    width: 25%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a:hover {
+    background-color: gray;
+}
+
+nav a:active {
+    background-color: white;
+    color: black;
+}
+
+header h1 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+header h2 {
+    text-align: center;
+}
+
+.sidebar {
+    background-color: #D6AD60;
+    width: 25%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 2%;
+    border-radius: 20px;
+}
+
+.posts {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    background-color: #D6AD60;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 2%;
+    margin-left: 2%;
+    border-radius: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#mypic {
+    display: block;
+    margin: auto;
+}
+
+/*text sizes*/
+
+h1 {
+    font-size: 2vmax;
+}
+
+h2 {
+    font-size: 1.5vmax;
+}
+
+p {
+    font-size: 1.1vmax;
+}
+
+li {
+    font-size: 1.1vmax;
+}
+
+a {
+    font-size: 1vmax;
+}
+
+.signature {
+    font-size: 1vmax;
+}
+
+.tab {
+    text-indent: 2%;
+}
+
+footer {
+    text-align: center;
+    font-size: 1vmax;
+}

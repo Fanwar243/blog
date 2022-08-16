@@ -41,12 +41,15 @@
                 </article>
     
                 <article>
-                    <h2>2022 Book Log</h2>
-                    <ol>
+                    <h2>2022 Book Log (target: 24 books)</h2>
+                    <ol id="readingList">
                         <li><i>L’Étranger</i> by Albert Camus</li>
                         <li><i>Hegel</i> by Peter Singer</li>
-                        Target: 24 books
                     </ol>
+                    <p>Add book to log:</p>
+                    <input type="text" placeholder="Book Name" id="bookname" name="bookname">
+                    <input type="text" placeholder="Author Name (optional)" id="author" name="author">
+                    <button type="button" onclick="updateList()">Submit</button>
                 </article>
             </div>
 
